@@ -51,6 +51,11 @@
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
   },
+  "config": {
+    "commitizen": {
+        "path": "./node_modules/cz-conventional-changelog-zh"
+    }
+  },
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
