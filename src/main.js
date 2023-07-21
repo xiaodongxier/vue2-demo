@@ -6,6 +6,10 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
+Vue.use(Antd);
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
