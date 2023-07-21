@@ -5,7 +5,10 @@
 > 安装了提交规范插件，commit命令换成下面的即可
 > git commit -m  -> git cz
 
-- `main` 初始化的一个项目，没有任何依赖
+- `init-v1`初始化的一个项目，新增了一一些插件
+  - vuex@3.0.1
+  - less@3.9.0
+  - less-loader@4.1.0
 
 
 ## Build Setup
