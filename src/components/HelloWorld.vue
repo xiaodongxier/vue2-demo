@@ -110,7 +110,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped >
 .gutter-example {
   width: 90vw;
   margin: 0 auto;
