@@ -1,7 +1,7 @@
 <template>
   <div>
     <button>{{ title }}</button>
-    <a :href="url" target="_blank">连接</a>
+    <a :href="url" target="_blank">{{ title }} go</a>
   </div>
 </template>
 
