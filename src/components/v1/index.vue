@@ -3,10 +3,14 @@
     v1
     {{ storedata }}
     <button @click="btnClickDate">a传值</button>
+
+    <h3>mapState获取数据： {{ maptest1 }} , {{ test }}</h3>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
   name: 'HelloWorld',
   data () {
@@ -19,6 +23,9 @@ export default {
     btnClickDate(){
       this.$emit("onv1msgClick",this.msg)
     }
+  },
+  computed: {
+    ...mapState(['maptest1'])
   }
 }
 </script>

@@ -1,8 +1,11 @@
 <template>
   <div class="hello">
     {{ msg }}
+    <hr>
     <v1 @onv1msgClick="v1msg"></v1>
+    <hr>
     <v2 :v1data="v1data"></v2>
+    <hr>
   </div>
 </template>
 
