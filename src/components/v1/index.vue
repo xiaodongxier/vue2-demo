@@ -4,7 +4,9 @@
     {{ storedata }}
     <button @click="btnClickDate">a传值</button>
 
-    <h3>mapState获取数据： {{ maptest1 }} , {{ test }}</h3>
+    <h3>mapState获取数据： {{ maptest1 }}, {{ number }}}</h3>
+
+    <button @click="btnClickMuti">mutations改变number值</button>
   </div>
 </template>
 
@@ -22,10 +24,13 @@ export default {
   methods: {
     btnClickDate(){
       this.$emit("onv1msgClick",this.msg)
+    },
+    btnClickMuti(){
+      this.$store.commit("setTest")
     }
   },
   computed: {
-    ...mapState(['maptest1'])
+    ...mapState(['maptest1','number'])
   }
 }
 </script>
