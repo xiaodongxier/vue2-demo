@@ -1,12 +1,18 @@
 <template>
   <div id="app">
+    路由匹配
+    <home-nav></home-nav>
     <router-view/>
   </div>
 </template>
 
 <script>
+import HomeNav from './pages/home.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HomeNav
+  }
 }
 </script>
 

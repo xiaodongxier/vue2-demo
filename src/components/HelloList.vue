@@ -10,14 +10,10 @@
     </ul>
     <h1>
       List
-      <!-- {{ $route.params.id }} -->
+      {{ $route.params.id }}
       <hr>
-      <router-view></router-view>
+      <!-- <router-view></router-view> -->
     </h1>
-
-
-
-
   </div>
 </template>
 
